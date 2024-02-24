@@ -1,9 +1,9 @@
-package chapter1
+package exercises
 import "fmt"
 
 type predicate func(int) bool
 
-func Main() {
+func Example1() {
 	is := []int{1,1,2,4,5,6,18}
 	larger := filter(is, largerThan5)
 	fmt.Printf("%v",larger)
